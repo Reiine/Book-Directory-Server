@@ -14,8 +14,8 @@
 
 # API Routes
 1. **POST** &nbsp;&nbsp;&nbsp;/login &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- **important** After you post your "email" and "pass" in this route, you will receive a jwt token. This jwt token is used if you want to access other routes.
-2. **GET** &nbsp;&nbsp;&nbsp;&nbsp;/books &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- Route to fetch book data with pagination. Query example: http://localhost:3001/books?page=1&limit=5.
-3. **POST** &nbsp;&nbsp;&nbsp;/books &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- Route to add a book.
+2. **GET**  &nbsp;&nbsp;&nbsp;&nbsp;/books &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- Route to fetch book data with pagination. Query example: http://localhost:3001/books?page=1&limit=5.
+3. **POST**  &nbsp;&nbsp;&nbsp;/books &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- Route to add a book.
 4. **GET** &nbsp;&nbsp;&nbsp;&nbsp; /books/:id :- Route to find book of a specific id.
 5. **PUT** &nbsp;&nbsp;&nbsp;&nbsp; /books/:id :- Route to update a book.
 6. **DELETE** /books/:id :- Route to delete a book.
