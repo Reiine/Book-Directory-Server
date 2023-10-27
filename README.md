@@ -13,14 +13,14 @@
 5. Check the api connection through postman or your browser.
 
 # API Routes
-1. **POST**&nbsp;&nbsp;&nbsp;&nbsp;/login &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- **important** After you post your "email" and "pass" in this route, you will receive a jwt token. This jwt token is used if you want to access other routes.<br>
+1. **POST** /login :- **important** After you post your "email" and "pass" in this route, you will receive a jwt token. This jwt token is used if you want to access other routes.<br>
 body:- {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"email" : "my_email@gmail.com",<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pass"&nbsp;&nbsp;: "mypassword"<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
 
-3. **GET**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/books &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- Route to fetch book data with pagination. Query example: http://localhost:3001/books?page=1&limit=5.
-4. **POST**&nbsp;&nbsp;&nbsp;&nbsp;/books &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:- Route to add a book.<br>
+3. **GET** /books :- Route to fetch book data with pagination. Query example: http://localhost:3001/books?page=1&limit=5.
+4. **POST** /books :- Route to add a book.<br>
 if logged in header should contain authorization token<br>
 body:- {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "book name",<br>
@@ -28,8 +28,8 @@ body:- {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description":"description"<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
 
-6. **GET**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /books/:id :- Route to find book of a specific id.
-7. **PUT**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /books/:id :- Route to update a book.<br>
+6. **GET** /books/:id :- Route to find book of a specific id.
+7. **PUT** /books/:id :- Route to update a book.<br>
 if logged in header should contain authorization token<br>
 body:- {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "book name",<br>
