@@ -13,7 +13,7 @@
 5. Check the api connection through postman or your browser.
 
 # API Routes
-1. POST /login :- *important* After you post your email and password, you will receive a jwt token. This jwt token is used if you want to access other routes.
+1. POST /login :- *important* After you post your "email" and "pass" in this route, you will receive a jwt token. This jwt token is used if you want to access other routes.
 2. GET /books :- Route to fetch book data with pagination. Query example: http://localhost:3001/books?page=1&limit=5.
 3. POST /books :- Route to add a book
 4. GET /books/:id :- Route to find book of a specific id
